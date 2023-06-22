@@ -1,0 +1,32 @@
+{
+  "name": "@CoderYakrlef/baileys-store",
+  "version": "1.0.0-beta.1",
+  "description": "Minimal Baileys data storage for your favorite DBMS built with Native MYSQL Client",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/coderYk9/baileys_store.git",
+  "author": "CoderYakrlef",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@whiskeysockets/baileys": "^6.3.0",
+    "mariadb": "^3.1.2",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "tiny-invariant": "^1.3.1"
+  },
+  "peerDependencies": {
+    "@whiskeysockets/baileys": "^6.3.0",
+    "mariadb": "^3.1.2"
+  },
+  "files": [
+    "dist/",
+    "db/migration.sql" ,
+    ".env.example"
+  ]
+}

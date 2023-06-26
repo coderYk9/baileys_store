@@ -4,8 +4,9 @@
 name: coderyk9
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: 
+        - main
 
 jobs:
   build:
@@ -15,8 +16,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm test
+      - run: npm build
 
   publish-npm:
     needs: build
@@ -27,7 +27,6 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm publish access public
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKRN}}

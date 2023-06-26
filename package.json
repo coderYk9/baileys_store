@@ -1,10 +1,10 @@
 {
-  "name": "@CoderYakrlef/baileys-store",
+  "name": "@coderyakrlef/baileys-store",
   "version": "1.0.0-beta.1",
   "description": "Minimal Baileys data storage for your favorite DBMS built with Native MYSQL Client",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/coderYk9/baileys_store.git",
+  "repository": {"type":"git","url":"git+https://github.com/coderYk9/baileys_store.git"},
   "author": "CoderYakrlef",
   "license": "MIT",
   "scripts": {

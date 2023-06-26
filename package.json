@@ -28,5 +28,7 @@
     "dist/",
     "db/migration.sql" ,
     ".env.example"
-  ]
+  ],"engines": {
+    "version":"^>=14.6.0"
+  }
 }
